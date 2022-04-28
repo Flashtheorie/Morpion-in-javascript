@@ -20,6 +20,22 @@ let tileHuit = document.querySelector("#tileHuit");
 let tileNeuf = document.querySelector("#tileNeuf");
 let historique = document.querySelector('.historique');
 
+
+function checkIfTilesIsFull(){
+    if (tileUn.innerHTML != "" && tileDeux.innerHTML != "" && tileTrois.innerHTML != "" &&
+    tileQuatres.innerHTML != "" && tileCinq.innerHTML != "" && tileSix.innerHTML != "" &&
+    tileSept.innerHTML != "" && tileHuit.innerHTML != "" && tileNeuf.innerHTML != "")
+    {
+        alert("Plus aucun mouvement possible. Match nul.");
+        location.reload();
+    }
+}
+
+
+setInterval(checkIfTilesIsFull, 1000);
+
+
+
 function checkIfPlayerOneWins() {
     if (tileUn.innerHTML == symbolePlayerOne && tileDeux.innerHTML == symbolePlayerOne && tileTrois.innerHTML == symbolePlayerOne
         ||
