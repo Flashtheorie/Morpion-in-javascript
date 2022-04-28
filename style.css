@@ -1,0 +1,77 @@
+@font-face{
+    font-family: 'JetBrainsMono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  body {
+    font-family: 'JetBrainsMono';
+    background-color: #34495e;
+  }
+.titre {
+    text-align: center;
+}
+.global-container
+{
+    display: flex;
+    justify-content: space-around;
+}
+th {
+    border: 10px solid black;
+    width: 150px;
+    height:150px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #34495e;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.reload {
+    border: 10px solid black;
+    width: 150px;
+    height:150px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #34495e;
+    cursor: pointer;
+    font-size: 50px;
+}
+table
+{
+    
+    border-radius: 25px;
+}
+
+#scorePlayerOne, #scorePlayerTwo {
+    padding: 10px;
+    font-size: 30px;
+}
+
+.signs {
+    display: flex;
+    justify-content: space-around;
+}
+#sign1, #sign2
+{
+    background-color: antiquewhite;
+    width: 50px;
+    height: 50px;
+    color: #c0392b;
+    display: flex;
+    font-weight: bold;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+#whosTurn {
+    opacity: 40%;
+}
+
+.historique {
+    list-style-type: none;
+}
