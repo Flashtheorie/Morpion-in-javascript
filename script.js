@@ -109,7 +109,7 @@ for (let i = 0; i < tiles.length; i++) {
                 whosturnarea.innerHTML = "C'est au tour de " + player1;
                 checkIfPlayerTwoWins();
                 let li = document.createElement('li');
-                li.innerHTML = `${player2} a posé sa pièce sur la case ${e.target.id}`; 
+                li.innerHTML = `${player2} a posé sa pièce sur la case ${e.target.id.replace('tile', '')}`; 
                 historique.appendChild(li)
                 
             }
@@ -133,7 +133,7 @@ for (let i = 0; i < tiles.length; i++) {
                 whosturnarea.innerHTML = "C'est au tour de " + player2;
                 checkIfPlayerOneWins()
                 let li = document.createElement('li');
-                li.innerHTML = `${player1} a posé sa pièce sur la case ${e.target.id}`; 
+                li.innerHTML = `${player1} a posé sa pièce sur la case ${e.target.id.replace('tile', '')}`; 
                 historique.appendChild(li)
                 
             }
